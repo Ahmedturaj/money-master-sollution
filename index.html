@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Master</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/479f6b8171.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="text-5xl font-semibold text-center mt-5 text-green-800">Money Master <i
+        class="fa-solid fa-sack-dollar text-amber-400"></i></h1>
+  </header>
+  <section class="md:px-8 grid md:grid-cols-2 gap-4">
+    <div><img src="images/money.png" alt="" class=" md:w-10/12 h-full mt-5"></div>
+    <div class="p-10 mt-5 text-center bg-slate-300 ">
+      <h2 id="income" class="text-4xl mb-6 font-semibold">Income</h2>
+
+      <table class=" mx-auto align-middle">
+        <tbody>
+          <tr>
+            <td class="text-xl">Income :- <input id="income-input" class="h-10 ml-1 mb-3" type="number"></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="text-2xl font-semibold mt-6 mb-6">Expense</h2>
+      <table class=" mx-auto align-middle">
+        <tbody>
+          <tr>
+            <td class="text-xl">Food:-<input id="food-input" class="h-10 ml-8 mb-3" type="number"></td>
+          </tr>
+          <tr>
+            <td class="text-xl"> Rent:-<input id="rent-input" class="h-10 ml-9 mb-3" type="number"> </td>
+          </tr>
+          <tr>
+            <td class="text-xl">Clothes:-<input id="Clothes-input" class="h-10 ml-3" type="number"> </td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="calculate-btn" class="bg-blue-700 text-white px-4 py-2 mt-6 text-xl rounded-lg">Calculator</button>
+      <h2 class="text-2xl font-semibold mb-2 mt-5">Total Expenses: <span id="total-expenses-amount">00</span> </h2>
+      <h2 class="text-xl font-semibold">Balance: <span id="balance-total">00</span></h2>
+      <div>
+        <div class="mt-5">
+
+          <span class="text-2xl">Save :-</span> <input id="saving-input" class="h-10 w-20 ml-1 mb-3" type="number">
+
+          <span class="text-2xl ml-4 mr-4"> % </span>
+          <button id="saving-btn" class=" bg-blue-700 text-white py-2 px-4 rounded-md">Save</button>
+        </div>
+        <h2 class="text-xl font-semibold">Saving Amount: <span id="saving-amount">00</span> </h2>
+        <h2 class="text-xl font-semibold">Remaining Balance: <span id="remaining-balance">00</span> </h2>
+      </div>
+    </div>
+    <!-- <h1 class="text-3xl">Income</h1> -->
+
+    </div>
+  </section>
+
+  <script src="js/common.js"></script>
+  <script src="js/calculate.js"></script>
+</body>
+
+</html>
